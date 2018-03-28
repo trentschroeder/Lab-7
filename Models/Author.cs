@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace Fisher.Bookstore.Api.Models
 {
@@ -6,12 +7,11 @@ namespace Fisher.Bookstore.Api.Models
     {
         public int id { get; set;}
         
-        public string FName {get;set;}
+        public string Name { get; set;}
 
-        public string LName {get;set;}
 
-        public string Genre {get;set;}
+        public string Bio { get; set; }
 
-        public string Publisher {get;set;}
+        public List<Book> Title { get; set; }
     }
 }
